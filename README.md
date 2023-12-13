@@ -152,12 +152,12 @@ SOCIALACCOUNT_PROVIDERS = {
 ---
 
 Bibliographie
-https://www.syloe.com/glossaire/authentification/ 
-https://support.google.com/cloud/answer/10311615?hl=fr#user-type&zippy=%2Cinternal%2Cexternal 
-https://docs.allauth.org/en/latest/introduction/index.html 
-https://docs.allauth.org/ 
-https://cga-blog.vercel.app/ 
+* https://www.syloe.com/glossaire/authentification/ 
+* https://support.google.com/cloud/answer/10311615?hl=fr#user-type&zippy=%2Cinternal%2Cexternal 
+* https://docs.allauth.org/en/latest/introduction/index.html 
+* https://docs.allauth.org/ 
+* https://cga-blog.vercel.app/ 
 
-&copy; 2023 Code, Growth Alive &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2023 Code, Growth Alive  &bull; [MIT License](https://gh.io/mit)
 
 </footer>
