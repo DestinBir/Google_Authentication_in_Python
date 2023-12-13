@@ -73,12 +73,13 @@ _Visiter ce lien: https://docs.allauth.org/en/latest/installation/quickstart.htm
 
 ## Etape 1: Installation du package
 Dans le terminal et surtout de préférence dans l’environnement virtuel du projet
-'''bash
+```bash
 (env) PS D:\projets\devFest> pip install django-allauth
+```
 
-'''
 ## Etape 2: Configuration dans settings.py
-'''python
+
+```python
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
@@ -108,25 +109,29 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+```
 
-'''
 ## Etape 2: Configuration dans settings.py
-'''python
+
+```python
 urlpatterns = [
     path('accounts/', include('allauth.urls')),
 ]
-'''
+```
+
 ## Etape 3: Ajout parmi les liens: urls.py
-'''bash
+
+```bash
 (env) PS D:\projets\devFest> python manage.py makemigrations
 
 (env) PS D:\projets\devFest> python manage.py migrate
-'''
-##Etape 4: Creation de l’API google auth 
+```
+
+## Etape 4: Creation de l’API google auth 
 
 Link: https://console.cloud.google.com/apis/dashboard 
 Nous pourrions y jeter un coup d’oeil à la fin de la présentation.
-'''python
+```python
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
@@ -136,7 +141,7 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
-'''
+```
 <footer>
 
 <!--
