@@ -1,11 +1,6 @@
 <header>
 
-<!--
-  <<< Author notes: Destin Biringanine >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+
 
 # Implémentation de google authentification dans vos projet django avec python
 ## Implementation of google authentication in your django project using python
@@ -78,13 +73,17 @@ _Visiter ce lien: https://docs.allauth.org/en/latest/installation/quickstart.htm
 
 ## Etape 1: Installation du package
 Dans le terminal et surtout de préférence dans l’environnement virtuel du projet
->(env) PS D:\projets\devFest> pip install django-allauth
->
+'''bash
+(env) PS D:\projets\devFest> pip install django-allauth
+
+'''
 ## Etape 2: Configuration dans settings.py
->AUTHENTICATION_BACKENDS = [
->    'django.contrib.auth.backends.ModelBackend',
->    'allauth.account.auth_backends.AuthenticationBackend',
->]
+'''python
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
 INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.messages',
@@ -95,11 +94,10 @@ INSTALLED_APPS = [
 	
     'allauth.socialaccount.providers.google',
 ]
+
 MIDDLEWARE = (
     "allauth.account.middleware.AccountMiddleware",
 )
-
-Etape 2: Configuration dans settings.py
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
@@ -111,7 +109,7 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
-
+'''
 Etape 2: Configuration dans settings.py
 
 urlpatterns = [
