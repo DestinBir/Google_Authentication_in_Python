@@ -110,24 +110,23 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 '''
-Etape 2: Configuration dans settings.py
-
+## Etape 2: Configuration dans settings.py
+'''python
 urlpatterns = [
     path('accounts/', include('allauth.urls')),
 ]
-
-Etape 3: Ajout parmi les liens: urls.py
-
-# terminal et de préférence dans l’environnement virtuel
+'''
+## Etape 3: Ajout parmi les liens: urls.py
+'''bash
 (env) PS D:\projets\devFest> python manage.py makemigrations
-# apres execution 
+
 (env) PS D:\projets\devFest> python manage.py migrate
-Etape 4: Etre sûr d’avoir effectuer la migration
+'''
+##Etape 4: Creation de l’API google auth 
 
 Link: https://console.cloud.google.com/apis/dashboard 
 Nous pourrions y jeter un coup d’oeil à la fin de la présentation.
-Etape 4: Creation de l’API google auth 
-
+'''python
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
@@ -137,6 +136,7 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+'''
 <footer>
 
 <!--
