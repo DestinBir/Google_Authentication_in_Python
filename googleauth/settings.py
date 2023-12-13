@@ -138,4 +138,4 @@ SOCIALACCOUNT_PROVIDERS = {
             'key': ''
         }
     }
-}
+} 
